@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  hello_flask:
+    image: hello_flask
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
